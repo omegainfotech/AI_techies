@@ -1,0 +1,331 @@
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap");
+
+/* body css starts from here... */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* background-color: rgb(233, 229, 229); */
+  background:white
+  color: black;
+}
+ 
+
+/* navbar css starts from here.... */
+.background {
+  background: linear-gradient(to right, #FFC0CB, #FFD700); /* Gradient from pink to gold */
+  color: white; /* Change text color to white for visibility */
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  height: 100px;
+}
+
+
+.navbar {
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  /* Make sure the z-index is higher than the carousel */
+  font-size: 25px;
+  font-family: "Kanit", sans-serif;
+  text-shadow: 2px 2px 4px #000000;
+  color: white; /* Set the font color to white */
+}
+
+.nav-title {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  color: #f0f0f0; /* Light gray font color for contrast */
+  margin-bottom: 16px;
+  padding-left: 35px;
+  font-size: 35px;
+}
+
+
+.nav-list {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  padding-left: 200px;
+  font-size: 40px;
+}
+
+.nav-list li {
+  list-style: none;
+  padding: 26px 30px;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.nav-list li a:hover {
+  text-decoration: none;
+  color: grey;
+}
+
+
+/* image carousel css starts from here.. */
+
+.container {
+  padding: 0%;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.slider-wrapper {
+  position: relative;
+  margin: 0 auto;
+  object-fit: cover;
+  width: 100%;
+  /* Adjust the width as needed */
+  margin: 20px auto;
+  /* Center the carousel */
+  overflow: hidden;
+  /* Hide overflow for smooth appearance */
+  aspect-ratio: 16/9;
+}
+
+.slider {
+  display: flex;
+  aspect-ratio: 16/9;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  /* box-shadow: 0 1.5rem 3rem -0.75rem hsla(0,0%,0%,0.25); */
+  border-radius: 0.5rem;
+  display: flex;
+  /* Display images side by side */
+  transition: transform 0.3s ease-in-out;
+  /* Add smooth sliding transition */
+}
+
+.slider img {
+  flex: 1 0 100%;
+  /* scroll-snap-align: start; */
+  width: 100%;
+  /* Make images responsive */
+  object-fit: cover;
+  /* Maintain aspect ratio and cover container */
+}
+
+.slider-nav {
+  display: flex;
+  column-gap: 1rem;
+  position: absolute;
+  bottom: 1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.slider-nav a {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.75;
+  transition: opacity ease 250ms;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #aaa;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.slider-nav a:hover {
+  opacity: 1;
+}
+.ai-basics {
+  margin-top: 50px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.ai-basics h2 {
+  font-size: 24px;
+  margin-top: 0;
+}
+
+.ai-basics img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 260px;
+    width: 501px;
+}
+
+
+.ai-basics .subheadings {
+  margin-bottom: 20px;
+}
+
+.ai-basics h3 {
+  font-size: 20px;
+  margin-top: 0;
+}
+
+.ai-basics ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+.ai-technologies {
+  padding: 20px;
+}
+
+.ai-technologies img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 300px;
+  width: 501px;
+}
+.ai-technologies .subheadings {
+  margin-top: 20px;
+}
+
+.ai-technologies .subheadings h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.ai-technologies .subheadings ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+.ai-technologies .subheadings li {
+  margin-bottom: 10px;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.ai-trends {
+  padding: 2rem;
+}
+
+.ai-trends h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.ai-trends img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 300px;
+  width: 501px;
+}
+
+.ai-trends .subheadings {
+  padding: 1rem;
+}
+
+.ai-trends h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.ai-trends ul {
+  list-style: none;
+  padding: 0;
+}
+
+.ai-trends li {
+  padding: 0.5rem 0;
+}
+.ai-resources {
+  margin: 20px 0;
+}
+
+.ai-resources h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.ai-resources img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 300px;
+  width: 501px;
+}
+
+.ai-resources .subheadings {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ai-resources .subheadings h2 {
+  flex-basis: 100%;
+  margin-bottom: 0;
+}
+
+.ai-resources .subheadings ul {
+  flex-basis: 50%;
+  list-style: none;
+  padding: 0;
+}
+
+.ai-resources .subheadings li {
+  margin-bottom: 10px;
+}
+
+.ai-resources .subheadings a {
+  color: black;
+  text-decoration: none;
+}
+.ai-case-studies {
+  padding: 20px;
+}
+
+.ai-case-studies h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.ai-case-studies p {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+.ai-case-studies ul {
+  list-style: none;
+  padding: 0;
+}
+
+.ai-case-studies ul li {
+  margin-bottom: 10px;
+}
+
+.ai-case-studies ul li a {
+  font-size: 16px;
+  color: #000;
+  text-decoration: none;
+}
+
+.ai-case-studies ul li a:hover {
+  text-decoration: underline;
+}
+
+.ai-case-studies h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+
+
